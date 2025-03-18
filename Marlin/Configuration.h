@@ -1236,7 +1236,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 100, 200, 200, 30, 50} // Microstepping X = 1/16, Y = 1/16, Z = 1 , I = 1/4, J=1/4 , E0 = E1 = DUMMY K worked better with higher step/mm (60)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 100, 200, 200, 180, 50} // Microstepping X = 1/16, Y = 1/16, Z = 1 , I = 1/4, J=1/4 , E0 = E1 = DUMMY K worked better with higher step/mm (60)
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
@@ -1248,7 +1248,7 @@
  * Override with M203
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 200, 200, 25, 15, 15, 16, 50}
+#define DEFAULT_MAX_FEEDRATE          { 200, 200, 25, 15, 15, 360, 50}
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1261,7 +1261,7 @@
  * Override with M201
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 300, 300, 50, 300, 300, 32, 50}
+#define DEFAULT_MAX_ACCELERATION      { 300, 300, 50, 300, 300, 125, 50}
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
