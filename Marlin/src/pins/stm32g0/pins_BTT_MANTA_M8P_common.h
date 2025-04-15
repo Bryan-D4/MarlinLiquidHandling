@@ -112,7 +112,7 @@
   #define Y_STOP_PIN                  Y_DIAG_PIN  // MIN2
 #endif
 
-#define Z_MIN_PIN                    Z_DIAG_PIN  // MIN3
+#define Z_MIN_PIN                    PF6  // MIN3 has external pullup, use PF6 with 5V on VFAN6 for opto switch with comparator, don't enable pullup
 
 #define I_MIN_PIN                    I_DIAG_PIN  // MIN5
 
